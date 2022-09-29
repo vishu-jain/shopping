@@ -26,7 +26,7 @@ router.post('/postData', async (req, res) => {
     }
 })
 
-//--------------------Log In Api---------------------------------------->
+//--------------------Log thik chlra In Api---------------------------------------->
 
 router.post('/login', async (req, res) => {
     let body = req.body;
