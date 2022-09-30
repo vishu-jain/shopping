@@ -4,6 +4,7 @@ import Navbar from './navbar';
 import Carousel from './Carousel';
 import Signupform from './Signupform';
 import Login from './Login';
+import Casual from './products/casual';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Route path="/" element={<Carousel/>} />
     <Route path="/signup" element={<Signupform/>} />
     <Route path="/login" element={<Login/>}/>
+    <Route path="/casual" element={<Casual/>}/>
     </Routes>
    </BrowserRouter>
   );

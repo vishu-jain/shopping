@@ -37,17 +37,18 @@ const Login = () => {
   });
   let navigate=useNavigate();
       function sign(e){
-        e.preventDefault();
-         axios.post('http://localhost:8400/login',{
+        axios.post('http://localhost:8400/login',{
           email:formik.values.email,
           password:formik.values.password,
         })
-         .then((res) => { 
-          console.log(res) 
+        .then((res) => { 
+          alert("Log In Successfully");
+          navigate('/'); 
         })
-         .catch((err) => {
-           console.log(err);
-         });
+        .catch((err) => {
+          console.log(err);
+        });
+        e.preventDefault();
      }
 
    
